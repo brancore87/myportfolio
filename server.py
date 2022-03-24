@@ -41,8 +41,8 @@ def submit_form():
         try:
             data = request.form.to_dict()
             # write_to_text(data)
-            # write2_to_text(data)
-            write_to_csv(data)
+            write2_to_text(data)
+            # write_to_csv(data)
             return redirect('submitted.html')
         except:
             return 'Did not save to database'
